@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Contenedor principal */
+.container {
+  position: relative;
+  min-height: 100vh;
+  background-color: black;
+  text-align: center;
+}
+/* Título y enlace */
+.container h1 {
+  color: aliceblue;
+  padding: 15px;
+  font-size: 27px;
+}
+
+.container h2 {
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+.container a {
+  text-decoration: none;
+  font-size: 20px; 
+  color: #fff; /* Contraste con el azul oscuro */
+  background-color: #095591; /* Color principal */
+  padding: 22px 48px; /* Botón grande */
+  border-radius: 16px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 25px rgba(9, 85, 145, 0.8); /* Resplandor en azul oscuro */
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+/* Ícono dentro del botón */
+.container a i {
+  margin-right: 16px;
+  font-size: 32px; /* Ícono más grande */
+  vertical-align: middle;
+  color: #fff; /* Ícono en blanco */
+}
+
+/* Hover con más resplandor */
+.container a:hover {
+  background-color: #073f6d; /* Azul más profundo en hover */
+  transform: scale(1.09);
+  box-shadow:
+    0 0 40px rgba(9, 85, 145, 1),
+    0 0 22px rgba(9, 85, 145, 0.7); /* Resplandor más fuerte */
+}
+
+/* Animación de pulso azul oscuro */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 25px rgba(9, 85, 145, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(9, 85, 145, 1);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(9, 85, 145, 0.8);
+  }
+}
+
+/* Imágenes superiores */
+#img1 {
+  height: 5vh;
+  margin-top: 15px;
+  max-width: 100%;
+}
+#img2 {
+  height: 15vh;
+  margin-left: 27px;
+  margin-top: 15px;
+  max-width: 100%;
+}
+
